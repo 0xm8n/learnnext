@@ -1,9 +1,5 @@
 import '/styles/global.css';
 
-export const metadata = {
-    title: 'Learn Next.js',
-  };
-
 export default async function Page() {
     const forecast = await getWeather()
   return (

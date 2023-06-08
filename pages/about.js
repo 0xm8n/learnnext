@@ -1,7 +1,13 @@
+import { useSelector } from 'react-redux';
+
 export default function About(props) {
+  const { wallet } = useSelector(state => state)
     return (
       <>
         <h2>About Us</h2>
+        <p>
+          Wallet Address: { wallet.address == false ? "Not Connected" : wallet.address}
+        </p>
         <p>Welcome to this amazing about page. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro dolore officiis atque voluptas, quas, repellendus cum, magnam a alias unde reiciendis voluptates aliquam maxime laborum? Quae omnis eius impedit et?</p>
         <p>I have {props.repoCount} public repos on GitHub.</p>
       </>
