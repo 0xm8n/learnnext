@@ -1,14 +1,11 @@
 import Link from "next/link"
-import { useSelector } from 'react-redux';
+import WalletAddress from '/components/WalletAddress';
 
 export default function Blog(props) {
-  const { wallet } = useSelector(state => state)
   return (
     <>
       <h2>The Blog</h2>
-      <p>
-        Wallet Address: { wallet.address == false ? "Not Connected" : wallet.address}
-      </p>
+      <WalletAddress/>
       {props.posts.map((post, index) => {
         return (
           <div key={index}>

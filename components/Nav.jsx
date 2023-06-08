@@ -1,9 +1,8 @@
-'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { connectMetaMask, signOut } from '../redux/actions/walletAction';
+import { connectMetaMask, signOut } from '/redux/actions/walletAction';
 
 export default function Nav() {
     const pathName = usePathname()
