@@ -1,4 +1,5 @@
 import '/styles/global.css';
+import WalletAddress from '/components/WalletAddress';
 
 export default async function Page() {
     const forecast = await getWeather()
@@ -9,6 +10,7 @@ export default async function Page() {
         </div>
         <div>
             <h2>Welcome to our homepage.</h2>
+            <WalletAddress/>
             <p>This is the best home page in the world. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aspernatur illum architecto cumque recusandae fuga sequi necessitatibus deleniti repellat harum nobis, dolor veniam vero deserunt. Voluptatibus, ducimus deserunt. Recusandae, dolore.</p>
             <p>The weather: {forecast}</p>
         </div>

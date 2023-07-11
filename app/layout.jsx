@@ -1,4 +1,4 @@
-import MyApp from "../components/MyApp"
+import App from "/components/App"
 
 export const metadata = {
     title: 'Learn Next.js',
@@ -8,9 +8,9 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <MyApp>
+                <App>
                     {children}
-                </MyApp>
+                </App>
             </body>
         </html>
     );

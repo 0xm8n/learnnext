@@ -1,10 +1,12 @@
 import Link from "next/link"
+import WalletAddress from '/components/WalletAddress';
 
 export default async function Blog() {
     const posts = await getPosts()
   return (
     <>
       <h2>The Blog</h2>
+      <WalletAddress/>
       {posts.map((post, index) => {
         return (
           <div key={index}>

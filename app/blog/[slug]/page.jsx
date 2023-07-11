@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from "/styles/post.module.css"
+import WalletAddress from '/components/WalletAddress';
 
 export default async function Post({ params }) {
   const post = await getPost(params.slug)
@@ -10,6 +11,7 @@ export default async function Post({ params }) {
           <small>&laquo; back to all blog posts</small>
         </Link>
       </p>
+      <WalletAddress/>
       <h2 className={styles.title}>{post.title}</h2>
       <p>{post.content}</p>
     </>
